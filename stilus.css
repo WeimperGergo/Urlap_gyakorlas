@@ -1,0 +1,42 @@
+*{
+    /*margin: 0px;
+    padding: 0px;*/
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(gray, rgb(203, 203, 203));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    height: 100vh;
+    
+}
+
+/*MINDEN beviteli mezőre érvényes*/
+input{
+    margin: 5px;
+}
+/*CSAK LESZŰKÍTETT TÍPUSÚ beviteli mezőre érvényes*/
+input[type=submit]{
+    background-color: rgb(154, 59, 164);
+    color: black;
+    border: 5px outset rgb(59, 59, 59);
+    margin: auto;
+    padding: 5px 50px;
+    display: block;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(81, 57, 104);
+    color: aliceblue;
+    
+}
+
+input[type=submit]:focus{
+    background-color: rgb(2, 241, 6);
+    color: rgb(0, 0, 0);
+    
+}
