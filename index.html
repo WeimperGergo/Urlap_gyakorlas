@@ -11,28 +11,31 @@
   </head>
   <body>
     <main>
-
       <h1>Mozi</h1>
       <form action="#" method="get">
         <fieldset>
           <legend>Néző Adatai</legend> <!-- Kereten lévő szöveg -->
-
-          <label for="neve1">Név: </label>
-          <input type="text" id="neve1" name="nev" value="John Doe" size="10">
-            <br>
-          <!-- Label for és input id egyezzen meg! -->
-          <label for="kedvencfilm1">Filmnév: </label>
-          <input type="text" id="kedvencfilm1" name="kedvencfilm" value="Nekem 8" size="20">
-            <br>
-          <label for="filmszam_csuszka">Filmek száma/hét: </label>
-          <input type="range" id="filmszam_csuszka" name="Filmek_szama" value="50" size="20" oninput="this.form.f_szam.value=this.value">
-          <input type="number" name="f_szam" size="2" value="50" oninput="this.form.filmszam_csuszka.value=this.value">
-            <br>
-          <label for="utoljara_moziban">Mikor voltál utoljára moziban: </label>
-          <input type="date" id="utoljara_moziban" name="utoljaramoziban" value="date">
-            <br>
+          <div id="griddiv">
+            
+            
+            <label for="neve1">Név: </label>
+            <input type="text" id="neve1" name="nev" value="John Doe" size="10">
+            
+            <!-- Label for és input id egyezzen meg! -->
+            <label for="kedvencfilm1">Filmnév: </label>
+            <input type="text" id="kedvencfilm1" name="kedvencfilm" value="Nekem 8" size="20">
+            
+            <label for="filmszam_csuszka">Filmek száma/hét: </label>
+            <div style="padding: 0px; margin: 0px;">
+              <input type="range" id="filmszam_csuszka" name="Filmek_szama" value="50" size="20" oninput="this.form.f_szam.value=this.value">
+              <input type="number" name="f_szam" size="2" value="50" oninput="this.form.filmszam_csuszka.value=this.value">
+            </div>
+            <label for="utoljara_moziban">Mikor voltál utoljára moziban: </label>
+            <input type="date" id="utoljara_moziban" name="utoljaramoziban" value="date">
+          </div>
+            
           <input type="submit">
-            <br>
+            
         </fieldset>
       </main>    
       </form>
